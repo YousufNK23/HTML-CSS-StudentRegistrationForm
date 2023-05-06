@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Registration Form</title>
+
+    <style>
+        label {
+            margin: 120px;
+
+        }
+
+        textarea {
+            margin-left: 120px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1><b><u>STUDENT REGISTRATION FORM</u></b></h1>
+    <form action="StudentRegistrationForm.html" style="border: solid black;
+    background-color: royalblue;">
+    <h1 style="margin-left: 155px;
+    color: black;"><b><u>STUDENT REGISTRATION FORM</u></b></h1>
 
     <label for="fn"><b>FIRST NAME</b></label>
-    <input type="text" name="" id="fn"> <small>(max 30 characters a-z and A-Z)</small>
+    <input type="text" name="" id="fn" placeholder="FIRST NAME"> <small>(max 30 characters a-z and A-Z)</small>
     <br>
     <br>
 
     <label for="ln"><b>LAST NAME</b></label>
-    <input type="text" name="" id="ln"> <small>(max 30 characters a-z and A-Z)</small>
+    <input type="text" name="" id="ln" placeholder="LAST NAME"> <small>(max 30 characters a-z and A-Z)</small>
     <br>
     <br>
 
     <label for="dob"><b>DATE OF BIRTH</b></label>
-    <input type="date" name="" id="dob">
+    <input type="date" name="" id="dob" placeholder="DATE OF BIRTH">
     <br>
     <br>
 
     <label for="email"><b>EMAIL ID</b></label>
-    <input type="email" name="" id="email">
+    <input type="email" name="" id="email" placeholder="EMAIL">
     <br>
     <br>
 
     <label for="mn"><b>MOBILE NUMBER</b></label>
-    <input type="number" name="" id="mn"> <small>(10 digit number)</small>
+    <input type="number" name="" id="mn" placeholder="MOBILE NUMBER"> <small>(10 digit number)</small>
     <br>
     <br>
 
@@ -46,23 +62,23 @@
     <br>
     <br>
 
-    <label for="city"><b>CITY</b></label> 
-    <input type="text" name="" id="city"> <small>(max 30 characters a-z and A-Z)</small>
+    <label for="city"><b>CITY</b></label>
+    <input type="text" name="" id="city" placeholder="CITY"> <small>(max 30 characters a-z and A-Z)</small>
     <br>
     <br>
 
-    <label for="pc"><b>PIN CODE</b></label> 
-    <input type="text" name="" id="pc"> <small>(6 digit number)</small>
+    <label for="pc"><b>PIN CODE</b></label>
+    <input type="text" name="" id="pc" placeholder="PIN CODE"> <small>(6 digit number)</small>
     <br>
     <br>
 
-    <label for="state"><b>STATE</b></label> 
-    <input type="text" name="" id="state"> <small>(max 30 characters a-z and A-Z)</small>
+    <label for="state"><b>STATE</b></label>
+    <input type="text" name="" id="state" placeholder="STATE"> <small>(max 30 characters a-z and A-Z)</small>
     <br>
     <br>
 
-    <label for="country"><b>COUNTRY</b></label> 
-    <input type="text" name="" id="country">
+    <label for="country"><b>COUNTRY</b></label>
+    <input type="text" name="" id="country" placeholder="COUNTRY">
     <br>
     <br>
 
@@ -71,17 +87,15 @@
     Singing<input type="radio" name="hobbies" id="">
     Dancing<input type="radio" name="hobbies" id="">
     Sketching<input type="radio" name="hobbies" id="">
-    <br>
     Others<input type="radio" name="hobbies" id="">
     <input type="text" name="" id="hobbies">
     <br>
     <br>
 
-    <label for="text"><small>QUALIFICIATION</small></label>
-
-    <table>
+    <table style="margin-left: 120px;">
         <thead>
             <tr>
+                <th>QUALIFICIATION</th>
                 <th><small>SI.NO</small></th>
                 <th><small>EXAMINATION</small></th>
                 <th><b>BOARD</b></th>
@@ -91,6 +105,7 @@
         </thead>
         <tbody>
             <tr>
+                <td></td>
                 <td>1.</td>
                 <td>Class X</td>
                 <td><input type="text" name="" id="board"></td>
@@ -99,6 +114,7 @@
             </tr>
 
             <tr>
+                <td></td>
                 <td>2.</td>
                 <td>Class XII</td>
                 <td><input type="text" name="" id="board"></td>
@@ -107,6 +123,7 @@
             </tr>
 
             <tr>
+                <td></td>
                 <td>3.</td>
                 <td>Graduation</td>
                 <td><input type="text" name="" id="board"></td>
@@ -115,6 +132,7 @@
             </tr>
 
             <tr>
+                <td></td>
                 <td>4.</td>
                 <td>Masters</td>
                 <td><input type="text" name="" id="board"></td>
@@ -122,6 +140,7 @@
                 <td><input type="text" name="" id="yearofpassing"></td>
             </tr>
             <tr>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td><small>(10 char max)</small></td>
@@ -140,7 +159,12 @@
     <br>
     <br>
 
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" style="margin-top: 20px;
+    margin-left: 420px;">
     <input type="reset" value="Reset">
+    <br>
+    <br>
+</form>
 </body>
+
 </html>
